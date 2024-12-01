@@ -8,13 +8,14 @@ const ChairGrid = ({ onChairClick, remainingChairs }) => {
   return (
     <div className="chair-grid-container">
       <svg
-        viewBox="0 0 1000 800" /* SVG全体を大きくする */
+        viewBox="0 0 1000 800"
         preserveAspectRatio="xMidYMid meet"
         className="chair-grid"
+        onTouchEnd={() => setHoveredChair(null)} // タッチ終了時にホバー解除
       >
         {chairs.map((chairNumber, index) => {
           const angle = -Math.PI / 2 + (index / chairs.length) * 2 * Math.PI;
-          const x = 500 + 300 * Math.cos(angle); /* 中心座標と半径を大きく調整 */
+          const x = 500 + 300 * Math.cos(angle); // 拡大版の中心と半径
           const y = 400 + 300 * Math.sin(angle);
 
           const isActive = remainingChairs[chairNumber - 1];
@@ -24,13 +25,13 @@ const ChairGrid = ({ onChairClick, remainingChairs }) => {
             <g
               key={chairNumber}
               onClick={isActive ? () => onChairClick(chairNumber) : undefined}
-              onMouseEnter={() => setHoveredChair(chairNumber)}
+              onMouseEnter={() => isActive && setHoveredChair(chairNumber)}
               onMouseLeave={() => setHoveredChair(null)}
             >
               <circle
                 cx={x}
                 cy={y}
-                r={isHovered ? 50 : 45} /* 椅子のサイズを大きく */
+                r={isHovered ? 50 : 45} // 椅子のサイズを拡大
                 fill={isActive ? (isHovered ? '#d4af37' : '#121212') : 'transparent'}
                 stroke={isActive ? '#d4af37' : 'transparent'}
                 strokeWidth={isHovered ? 5 : 4}
@@ -40,7 +41,7 @@ const ChairGrid = ({ onChairClick, remainingChairs }) => {
                   x={x}
                   y={y + 5}
                   textAnchor="middle"
-                  fontSize="18" /* フォントサイズを大きく */
+                  fontSize="18" // フォントサイズも拡大
                   fill={isHovered ? '#121212' : '#f1e9d2'}
                   fontWeight="bold"
                 >
