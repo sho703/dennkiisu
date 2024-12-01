@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/dennkiisu/static/css/main.94956146.css",
-    "main.js": "/dennkiisu/static/js/main.97d21968.js",
+    "main.css": "/dennkiisu/static/css/main.3f33829d.css",
+    "main.js": "/dennkiisu/static/js/main.018cdbd3.js",
     "index.html": "/dennkiisu/index.html",
-    "main.94956146.css.map": "/dennkiisu/static/css/main.94956146.css.map",
-    "main.97d21968.js.map": "/dennkiisu/static/js/main.97d21968.js.map"
+    "main.3f33829d.css.map": "/dennkiisu/static/css/main.3f33829d.css.map",
+    "main.018cdbd3.js.map": "/dennkiisu/static/js/main.018cdbd3.js.map"
   },
   "entrypoints": [
-    "static/css/main.94956146.css",
-    "static/js/main.97d21968.js"
+    "static/css/main.3f33829d.css",
+    "static/js/main.018cdbd3.js"
   ]
 }
