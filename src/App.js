@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import ChairGrid from './ChairGrid';
-import ScoreBoard from './ScoreBoard';
-import EffectOverlay from './EffectOverlay';
+import ChairGrid from './components/ChairGrid';
+import ScoreBoard from './components/ScoreBoard';
+import EffectOverlay from './components/EffectOverlay';
 import './App.css'
 
 const App = () => {

@@ -1,0 +1,17 @@
+.scoreboard-container {
+  margin-top: 20px;
+  overflow-x: auto; /* 横スクロールを許可 */
+  text-align: center;
+}
+
+.scoreboard-table {
+  width: 100%; /* フル幅に対応 */
+  max-width: 500px; /* 最大幅 */
+  margin: auto; /* 中央揃え */
+}
+
+.scoreboard-table th,
+.scoreboard-table td {
+  font-size: 12px; /* フォントサイズを調整 */
+  text-align: center;
+}

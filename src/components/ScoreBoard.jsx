@@ -1,5 +1,5 @@
 import React from 'react';
-import './ScoreBoard.css';
+import '../css/ScoreBoard.css';
 
 const ScoreBoard = ({ scores, scoreHistory }) => {
   const maxTurns = 8; // 固定で表示するターン数

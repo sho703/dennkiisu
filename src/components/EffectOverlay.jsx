@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import './EffectOverlay.css';
+import '../css/EffectOverlay.css';
 
 const EffectOverlay = ({ message, persistent, showButton, onRestart }) => {
   const [visible, setVisible] = useState(true);
