@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/dennkiisu/static/css/main.3f33829d.css",
-    "main.js": "/dennkiisu/static/js/main.341b2a59.js",
+    "main.js": "/dennkiisu/static/js/main.60b16db7.js",
     "index.html": "/dennkiisu/index.html",
     "main.3f33829d.css.map": "/dennkiisu/static/css/main.3f33829d.css.map",
-    "main.341b2a59.js.map": "/dennkiisu/static/js/main.341b2a59.js.map"
+    "main.60b16db7.js.map": "/dennkiisu/static/js/main.60b16db7.js.map"
   },
   "entrypoints": [
     "static/css/main.3f33829d.css",
-    "static/js/main.341b2a59.js"
+    "static/js/main.60b16db7.js"
   ]
 }
