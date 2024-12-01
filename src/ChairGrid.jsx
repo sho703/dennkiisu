@@ -9,8 +9,20 @@ const ChairGrid = ({ onChairClick, remainingChairs }) => {
 
   const [hoveredChair, setHoveredChair] = useState(null); // ホバー中の椅子を管理
 
+  const handleChairClick = (chairNumber) => {
+    if (remainingChairs[chairNumber - 1]) {
+      onChairClick(chairNumber);
+      setHoveredChair(null); // ホバー状態を解除
+    }
+  };
+
   return (
-    <svg width="800" height="600" style={{ backgroundColor: '#121212', borderRadius: '10px' }}>
+    <svg
+      width="800"
+      height="600"
+      style={{ backgroundColor: '#121212', borderRadius: '10px' }}
+      onTouchEnd={() => setHoveredChair(null)} // タッチ終了時にホバーを解除
+    >
       {chairs.map((chairNumber, index) => {
         const angle = -Math.PI / 2 + (index / chairs.length) * 2 * Math.PI; // 時計配置
         const x = centerX + radius * Math.cos(angle);
@@ -27,7 +39,7 @@ const ChairGrid = ({ onChairClick, remainingChairs }) => {
             isActive={isActive}
             isHovered={isHovered}
             chairNumber={chairNumber}
-            onClick={onChairClick}
+            onClick={handleChairClick}
             onHover={setHoveredChair}
           />
         );

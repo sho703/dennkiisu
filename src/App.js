@@ -147,7 +147,7 @@ const App = () => {
 
   return (
     <div style={{ textAlign: 'center' }}>
-      <h1>電気椅子ゲーム</h1>
+      <h1>電気イスゲーム</h1>
       <p>{state.message}</p>
       {currentEffect && (
         <EffectOverlay
